@@ -4,6 +4,16 @@
   "fileName": "CHENsModManager-v0.2.2-win-x64.exe",
   "size": 143800762,
   "sha256": "8D1A4EF39318C9F0712D7710C712BC49A8089B6C74A6D53C3211FB0FB601AA0D",
+  "notes": "分块下载与自动更新安装测速版本。",
+  "publishedAt": "2026-07-19T00:00:00+08:00",
+  "downloads": {
+    "win-x64": {
+      "url": "https://github.com/CHjiachen/chensmodmanager-updates/releases/download/v0.2.2/CHENsModManager-v0.2.2-win-x64.exe",
+      "sha256": "8D1A4EF39318C9F0712D7710C712BC49A8089B6C74A6D53C3211FB0FB601AA0D",
+      "size": 143800762,
+      "chunkManifestUrl": "https://gcore.jsdelivr.net/gh/CHjiachen/chensmodmanager-updates@main/manifest.json"
+    }
+  },
   "chunkSize": 8388608,
   "parts": [
     { "file": "CHENsModManager-v0.2.2.part-000.bin", "size": 8388608, "sha256": "58B7AF8A5535D9161097C9CD1B29B464575BD5E7A999B7460923BEB6F0EDD995" },
