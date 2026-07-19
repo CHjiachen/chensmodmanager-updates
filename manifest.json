@@ -1,110 +1,110 @@
 {
-    "version":  "0.2.3",
-    "displayVersion":  "v0.2.3（测试版）",
-    "fileName":  "CHENsModManager-v0.2.3.exe",
-    "size":  144102712,
-    "sha256":  "E518EAFDB8043053DB7FA3DB656EA0970D1664C60350F218651D693568100ABA",
-    "notes":  "1.重新配置了自动化操作。\n2.优化前置判断逻辑。\n3.优化 Nexus 多文件下载方式。\n4.更新弹窗逻辑。\n5.提高下载速度，优化四段并行下载和断点续传。\n6.日志写入更加详尽，更方便排查问题。",
-    "publishedAt":  "2026-07-20T01:33:25+08:00",
+    "version":  "0.2.4",
+    "displayVersion":  "v0.2.4（测试版）",
+    "fileName":  "CHENsModManager-v0.2.4.exe",
+    "size":  144164152,
+    "sha256":  "4AEF4871F47836ABAF3B1654942EF2931CF3B6CDBC3298A503D80269B797F4C7",
+    "notes":  "充分优化了以下内容：\n1.游戏模组 API 与框架。\n2.模组打包格式。\n3.冲突检测与依赖解析。\n4.架构与扩展性。",
+    "publishedAt":  "2026-07-20T07:56:00+08:00",
     "downloads":  {
                       "win-x64":  {
-                                      "url":  "https://github.com/CHjiachen/chensmodmanager-updates/releases/download/v0.2.3/CHENsModManager-v0.2.3.exe",
-                                      "sha256":  "E518EAFDB8043053DB7FA3DB656EA0970D1664C60350F218651D693568100ABA",
-                                      "size":  144102712,
+                                      "url":  "https://github.com/CHjiachen/chensmodmanager-updates/releases/download/v0.2.4/CHENsModManager-v0.2.4.exe",
+                                      "sha256":  "4AEF4871F47836ABAF3B1654942EF2931CF3B6CDBC3298A503D80269B797F4C7",
+                                      "size":  144164152,
                                       "chunkManifestUrl":  "https://gcore.jsdelivr.net/gh/CHjiachen/chensmodmanager-updates@main/manifest.json"
                                   }
                   },
     "chunkSize":  8388608,
     "parts":  [
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-000.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-000.bin",
                       "size":  8388608,
-                      "sha256":  "8656FDB1B5641AC36D50EB616D00B77E445384C76050ACC4E466D4DF8900AB7A"
+                      "sha256":  "A4EA59C13D4D132C41D8826F6131B9D58249D23355E753A3E40CAA55F7E3347E"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-001.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-001.bin",
                       "size":  8388608,
-                      "sha256":  "B1D1A218658E91BB10CD55F6F21E0939AF43A5F785217ADBDA3F44605401D676"
+                      "sha256":  "B238CFA1636205D65D4ED59D3EAD749684D21220A65CDA18DE22D5B32BEE959C"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-002.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-002.bin",
                       "size":  8388608,
-                      "sha256":  "FE58BA181DC0014E40271234BCF2166E40D02D09B24D637CEB40D244CEE2E458"
+                      "sha256":  "3649244EADF4F9C7DB58E6CC6CE4143805843262349903494C2435F6E57205E9"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-003.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-003.bin",
                       "size":  8388608,
-                      "sha256":  "F86B307EEB80AF81DB8AB74AA698E628599DD27B3625CFEC219B0BD49A02E879"
+                      "sha256":  "B7184198971F05B77A87A775FF453D4ED58F94263292F08A67E3A28930AB93CA"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-004.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-004.bin",
                       "size":  8388608,
-                      "sha256":  "C2B60E782FE6D7063608B148AF33C09AAD90EDE81576E9841D2144065A5016A9"
+                      "sha256":  "88C6E2E5A8DE8C1BA5E34327464F823DCD686E12F90B6C1F0B13A5FFD3429DA8"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-005.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-005.bin",
                       "size":  8388608,
-                      "sha256":  "A328D348BB7E149FBA6B116F7D01EDBC92C76286350BF2286342CE261E2B5EFA"
+                      "sha256":  "3FBE2500BF2E09D92D5AE37F00A5D2CDEE90D5A33726C28F17437100F0845411"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-006.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-006.bin",
                       "size":  8388608,
-                      "sha256":  "C7BE8C93E35A8B0C4D8ADFC38160FEA03D4C5A3F5220CFCFBA7124246D586E43"
+                      "sha256":  "622E1EF5ADEA895DF2C1F38306BC2AA62B8884BD771930FD55D01562A222F106"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-007.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-007.bin",
                       "size":  8388608,
-                      "sha256":  "DAA2E6FD3F6969BC118BF5FE299C1A3AE78A772BFCA5CA27C3590302B8A2DE84"
+                      "sha256":  "8EDBF4920576303CFF632ACA7B3C2B6CF902701470D88F14225A132650CD3BE8"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-008.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-008.bin",
                       "size":  8388608,
-                      "sha256":  "853FBEB34212AB68122DEF6918B3C97711C9DE657AF50685AA9F72C11F956597"
+                      "sha256":  "EDB6C1709B5D8E0780A0941030E28A8419C64D6958F9ED7618E0E7C0C73DFEF3"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-009.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-009.bin",
                       "size":  8388608,
-                      "sha256":  "97AFD6D67558C15477E0A1E3FCD6904951DDE1098B851F4C367586CEBF4BA876"
+                      "sha256":  "4B8414D2FE5B2F4325339A8588CFD18E95492BA3163BD7107AC3188756927F8D"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-010.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-010.bin",
                       "size":  8388608,
-                      "sha256":  "DB19286ABEDAC428E13ACD004E35D92231579277B59EAD09775FE30FD118B46C"
+                      "sha256":  "6C0592E8D57E934730F3ECB7C8F8C38AFACC6BA8C54ACFA99DB1C2FB43184FE7"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-011.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-011.bin",
                       "size":  8388608,
-                      "sha256":  "E25EC8C87CF8785D862BFE3C14B9883B13CF714061E8E374C4013C6DF990949F"
+                      "sha256":  "7CE683E45723D7FA24C3CF58AA6069B7B1015CD7D1BB1FE2521B1BBCDB9FEB79"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-012.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-012.bin",
                       "size":  8388608,
-                      "sha256":  "DFF57085C3B4DB812F05C622EC4D73DC03EC91A91696B622E48301EFEF5C19FF"
+                      "sha256":  "4732E3C470C8253EFEC33CBB70CB9BA9146A175269594B9E8FB12EDC34B5C0A1"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-013.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-013.bin",
                       "size":  8388608,
-                      "sha256":  "B14F8E25CC797AED77EB373438F7D37FABF1CCE2DD17AF9270380CD60C8DC592"
+                      "sha256":  "7A42060C5B68E51C9B0C7D1125D599A6AB10267977E2975541F5B8062D7FFF98"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-014.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-014.bin",
                       "size":  8388608,
-                      "sha256":  "8C49E945144D7D7382D8A5B2262EA5D0F4CD1BB78AE011405D101079E8E384C1"
+                      "sha256":  "2A45468107F508109CBE5FDB3701C096E60A35B3F21490F054FF0E62CAFBFF18"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-015.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-015.bin",
                       "size":  8388608,
-                      "sha256":  "59DB24E31EE71257AB9946A8138C9469AD44F4C9A1A2BA53E270E6239A3C20EE"
+                      "sha256":  "A49460CE6578F4B235ACB7C1979AE9BE7D418FB282EB307C37795A50ECF256DB"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-016.bin",
+                      "file":  "CHENsModManager-v0.2.4.part-016.bin",
                       "size":  8388608,
-                      "sha256":  "D8FB8A964ADDD683D00C05C107C916D4D51E65E868863EEA2A50EFED89371EDE"
+                      "sha256":  "58296C100D28FCC9C3F71FB310843911F7998BA06C35CFA19510D9CEF9852075"
                   },
                   {
-                      "file":  "CHENsModManager-v0.2.3.part-017.bin",
-                      "size":  1496376,
-                      "sha256":  "945FECEF6070D1D572735EE25A1D7C4335C403D83066AFE9F4A89A329F02F575"
+                      "file":  "CHENsModManager-v0.2.4.part-017.bin",
+                      "size":  1557816,
+                      "sha256":  "F159C0DF9AC84F7622A2B3ACF317690499E7A1F64BE90967A3AD9C58D159337F"
                   }
               ]
 }
