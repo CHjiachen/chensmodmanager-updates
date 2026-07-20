@@ -1,3 +1,2 @@
 # CHENsModManager Updates
-
-CHENsModManager Windows x64 更新文件。
+GitHub仅用作该软件更新时的服务器下载源
