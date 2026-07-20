@@ -25,8 +25,9 @@ jobs:
 
           manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
           tag = os.environ["GITHUB_REF_NAME"]
-          if tag != "v" + manifest["version"]:
-              raise SystemExit(f"Tag {tag} does not match manifest {manifest['version']}")
+          public_version = ".".join(manifest["version"].split(".")[:3])
+          if tag != "v" + public_version:
+              raise SystemExit(f"Tag {tag} does not match public version {public_version}")
 
           output = Path(manifest["fileName"])
           total = 0
