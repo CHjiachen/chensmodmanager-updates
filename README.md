@@ -1,2 +1,1 @@
-# CHENsModManager Updates
-GitHub仅用作该软件更新时的服务器下载源
+GitHub仅作为软件更新时的服务器下载源
