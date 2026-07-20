@@ -1,0 +1,61 @@
+name: Publish release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild and verify executable
+        id: package
+        shell: python
+        run: |
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+
+          manifest = json.loads(Path("manifest.json").read_text(encoding="utf-8"))
+          tag = os.environ["GITHUB_REF_NAME"]
+          if tag != "v" + manifest["version"]:
+              raise SystemExit(f"Tag {tag} does not match manifest {manifest['version']}")
+
+          output = Path(manifest["fileName"])
+          total = 0
+          digest = hashlib.sha256()
+          with output.open("wb") as destination:
+              for part in manifest["parts"]:
+                  path = Path(part["file"])
+                  data = path.read_bytes()
+                  if len(data) != part["size"]:
+                      raise SystemExit(f"Size mismatch: {path}")
+                  if hashlib.sha256(data).hexdigest().upper() != part["sha256"].upper():
+                      raise SystemExit(f"SHA-256 mismatch: {path}")
+                  destination.write(data)
+                  digest.update(data)
+                  total += len(data)
+
+          if total != manifest["size"]:
+              raise SystemExit("Rebuilt executable size mismatch")
+          if digest.hexdigest().upper() != manifest["sha256"].upper():
+              raise SystemExit("Rebuilt executable SHA-256 mismatch")
+
+          Path("release-notes.md").write_text(manifest["notes"], encoding="utf-8")
+          with Path(os.environ["GITHUB_OUTPUT"]).open("a", encoding="utf-8") as stream:
+              stream.write(f"file={output}\n")
+              stream.write(f"title={manifest['displayVersion']}\n")
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_FILE: ${{ steps.package.outputs.file }}
+          RELEASE_TITLE: ${{ steps.package.outputs.title }}
+        run: gh release create "$GITHUB_REF_NAME" "$RELEASE_FILE" --title "$RELEASE_TITLE" --notes-file release-notes.md
