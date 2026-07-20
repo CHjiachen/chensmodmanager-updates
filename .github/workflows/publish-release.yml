@@ -53,9 +53,15 @@ jobs:
               stream.write(f"file={output}\n")
               stream.write(f"title={manifest['displayVersion']}\n")
 
-      - name: Create GitHub release
+      - name: Create or update GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_FILE: ${{ steps.package.outputs.file }}
           RELEASE_TITLE: ${{ steps.package.outputs.title }}
-        run: gh release create "$GITHUB_REF_NAME" "$RELEASE_FILE" --title "$RELEASE_TITLE" --notes-file release-notes.md
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$RELEASE_FILE" --clobber
+            gh release edit "$GITHUB_REF_NAME" --title "$RELEASE_TITLE" --notes-file release-notes.md
+          else
+            gh release create "$GITHUB_REF_NAME" "$RELEASE_FILE" --title "$RELEASE_TITLE" --notes-file release-notes.md
+          fi
